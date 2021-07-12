@@ -10,11 +10,11 @@ public class MathFunction {
         return fisrt * second;
     }
 
-    public static double vi4itanie(double first, double second) {
+    public static double subtraction(double first, double second) {
         return first - second;
     }
 
-    public static double delenie(double fisrt, double second) {
+    public static double division(double fisrt, double second) {
         return fisrt / second;
     }
 }
