@@ -6,7 +6,7 @@ import org.junit.Test;
 public class PointTest {
     @Test
     public void test1() {
-        double expected = 200.0399960007998;
+        double expected = 200.04;
         int x1 = 6;
         int y1 = 100;
         int x2 = 10;
@@ -17,7 +17,7 @@ public class PointTest {
 
     @Test
     public void test2() {
-        double expected = 200.02249873451737;
+        double expected = 200.02;
         int x1 = 7;
         int y1 = 100;
         int x2 = 10;
@@ -28,7 +28,7 @@ public class PointTest {
 
     @Test
     public void test3() {
-        double expected = 200.0099997500125;
+        double expected = 200.01;
         int x1 = 8;
         int y1 = 100;
         int x2 = 10;
