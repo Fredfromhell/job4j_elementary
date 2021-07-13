@@ -11,7 +11,7 @@ public class Point {
         }
 
         public static void main(String[] args) {
-            double result = Point.distance(6, 100, 10, 300);
+            double result = Point.distance(8, 100, 10, 300);
             System.out.println("result (6, 100) to (10, 200) " + result);
 
         }
