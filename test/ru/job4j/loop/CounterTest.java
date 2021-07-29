@@ -13,7 +13,6 @@ public class CounterTest {
         Assert.assertEquals(expected, result);
     }
 
-
     @Test
     public void whenSumEvenNumbersFromOneToTenThenone() {
         int start = 1;

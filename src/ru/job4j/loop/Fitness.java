@@ -11,7 +11,7 @@ public class Fitness {
         return month;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(calc(40, 80));
     }
 }

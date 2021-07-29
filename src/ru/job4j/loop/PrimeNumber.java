@@ -6,13 +6,14 @@ public class PrimeNumber {
         int count = 0;
         for (int number = 1; number <= finish; number++) {
             if (CheckPrimeNumber.check(number)) {
-            count = count + 1;
+                count = count + 1;
             }
 
         }
         return count;
     }
-    public static void main (String args[]) {
+
+    public static void main(String[] args) {
         System.out.println(calc(11));
     }
 }
