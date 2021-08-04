@@ -7,7 +7,7 @@ public class ArrayChar {
         for (int i = 0; i < pref.length; i++) {
             if (word[i] != pref[i]) {
                 result = false;
-
+                break;
             }
         }
 
@@ -15,6 +15,6 @@ public class ArrayChar {
     }
 
     public static void main(String[] args) {
-        System.out.println(startsWith(new char[]{'H', 'e', 'l', 'l'}, new char[]{'H', 'e', 'l'}));
+        System.out.println(startsWith(new char[]{'H', 'e', 'l', 'l'}, new char[]{'H', 'I', 'l'}));
     }
 }
