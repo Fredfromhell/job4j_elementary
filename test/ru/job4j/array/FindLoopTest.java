@@ -37,7 +37,7 @@ public class FindLoopTest {
         int el = 2;
         int start = 2;
         int finish = 4;
-        int result = FindLoop.indexOf2(data, el, start, finish);
+        int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
@@ -47,7 +47,7 @@ public class FindLoopTest {
         int el = 6;
         int start = 2;
         int finish = 4;
-        int result = FindLoop.indexOf2(data, el, start, finish);
+        int result = FindLoop.indexOf(data, el, start, finish);
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
