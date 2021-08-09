@@ -4,8 +4,14 @@ public class Min {
     public static int findMin(int[] array) {
         int min = array[0];
         for (int index = 0; index < array.length; index++) {
-            /* проверить, что эталон больше, чем элемент. записать в эталон элемент массива. */
+            if (min > array[index]) {
+                min = array[index];
+            }
         }
         return min;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(findMin(new int[]{2, 3, 8, 5, 6, 7}));
     }
 }
