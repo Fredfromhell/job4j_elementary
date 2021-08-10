@@ -30,8 +30,17 @@ public class MatrixCheck {
         return result;
     }
 
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < rsl.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
+
     public static void main(String[] args) {
         System.out.println(monoHorizontal(new char[][]{{'A', 'B', 'C'}, {'X', 'X', 'X'}}, 1));
         System.out.println(monoVertical(new char[][]{{'A', 'X', 'C'}, {'X', 'X', 'X'}}, 0));
+        System.out.println(extractDiagonal(new char[][]{{'A', 'A', 'C'}, {'X', 'B', 'X'}, {'A', 'A', 'C'}}));
     }
 }
