@@ -38,9 +38,22 @@ public class MatrixCheck {
         return rsl;
     }
 
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int index = 0; index < board.length; index++) {
+            if (monoHorizontal(board, index) || monoVertical(board, index)) {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         System.out.println(monoHorizontal(new char[][]{{'A', 'B', 'C'}, {'X', 'X', 'X'}}, 1));
         System.out.println(monoVertical(new char[][]{{'A', 'X', 'C'}, {'X', 'X', 'X'}}, 0));
         System.out.println(extractDiagonal(new char[][]{{'A', 'A', 'C'}, {'X', 'B', 'X'}, {'A', 'A', 'C'}}));
+        System.out.println(isWin(new char[][]{{' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}}));
     }
 }
