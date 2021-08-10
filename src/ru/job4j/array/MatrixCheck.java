@@ -16,7 +16,22 @@ public class MatrixCheck {
 
     }
 
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int i = 0; i < board.length; i++) {
+            for (int cell = 0; cell < board[i].length; cell++) {
+                if (board[i][column] != 'X') {
+                    result = false;
+                    break;
+                }
+            }
+
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         System.out.println(monoHorizontal(new char[][]{{'A', 'B', 'C'}, {'X', 'X', 'X'}}, 1));
+        System.out.println(monoVertical(new char[][]{{'A', 'X', 'C'}, {'X', 'X', 'X'}}, 0));
     }
 }
