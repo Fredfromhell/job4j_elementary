@@ -20,6 +20,6 @@ public class Machine {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(change(100, 35)));
+        System.out.println(Arrays.toString(change(100, 21)));
     }
 }
