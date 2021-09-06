@@ -41,6 +41,7 @@ public class FindLoopTest {
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
+
     @Test
     public void whenFind4() {
         int[] data = new int[] {5, 2, 10, 2, 4};
