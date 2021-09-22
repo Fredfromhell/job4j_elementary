@@ -14,7 +14,7 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int msg = Max.max(100, 40, 50, 60);
+        int msg = Max.max(50, 40, 50, 60);
         System.out.println(msg);
     }
 }
