@@ -16,8 +16,5 @@ public class Task15 {
         System.out.print(ch[1]);
         System.out.print(ch[2]);
         System.out.print(ch[2]);
-
-
-
     }
 }
